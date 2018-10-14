@@ -1,0 +1,17 @@
+
+<div >
+  <h1>
+    {{ currentRound() }}
+    <small>est de patch aujourd'hui le {{ today | date }}</small>
+  </h1>
+    
+</div>
+
+<div class="float-right">
+  <h2> Absences : </h2>
+  <div *ngIf="absents.length == 0; else elseBlock">Aucune Absences</div>
+    <ng-template #elseBlock>
+      <div *ngFor=""></div>
+    </ng-template>
+</div>
+
